@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Dog Breed Identifier</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	</head>
+	<body class="is-preload">
+        <nav id="nav">
+            <ul>
+                <li><a href="#content" class="active">Introduction</a></li>
+                <li><a href="#bot">Bot Demo</a></li>
+                <li><a href="#details">Project Details</a></li>
+                <li><a href="#takeaways">Process & Takeaways</a></li>
+            </ul>
+        </nav>
+        <br><br><br>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" style="background-image: url(./images/doggo.png);">
+                        <div class="container rounded alert alert-primary text-dark" style="width: 30%;">
+                            <h1>Projects</h1>
+                            <p>Jan 2021</p>
+                        </div>
+                        <a href="./index.html#projects" class="btn btn-secondary px-3 text-white">Back</a>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Content -->
+							<section id="content" class="main">
+								<!-- <span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
+
+                                <div class="container w-100 p-4">
+                                    <h1>Telegram ChatBot Dog Breed Identifier</h1>
+                                    <br>
+                                    <!-- <p>Hack&Roll 2021 was a 24 hours Hackathon that spanned from 8 to 9 Jan 2021.</p> -->
+                                    <p>
+                                        <b><span style="color: #e37682;">Hack&Roll 2021 </b></span> was a 24 hours Hackathon that spanned from 8 to 9 Jan 2021.
+                                        <br><br>
+                                        As a fun side project to explore Machine Learning and Software Development, our team decided to develop a Telegram Chatbot and host a Dog Breed Classification model
+                                        as a means for learning and growth.
+                                        <br><br>
+                                        A quick run through of the Bot:
+                                    </p>
+                               
+                                    <div class="row my-3 p-4">
+                                        <div id="bot" class="col-lg-12 align-center">
+                                            <img src="images/doggo_bot5.gif" class="phone-gif" alt="" />
+                                        </div>
+                                    </div>
+
+                                    <div id="details" class="col-lg-12">
+                                        <div class="container p-3">
+                                            <h4>Features</h4>
+                                            <p>
+                                                The Telegram Chatbot allows users to submit an image of a dog and utilises a Convolutional Neural Network 
+                                                model to classify the breed class. If users were to send a message to the Telegram Bot, the Bot will reply with an image or gif of a dog
+                                                while it awaits an dog image from the user.
+                                            </p>
+                                        </div>
+
+                                        <div class="container p-3 mb-3">
+                                            
+                                            <h4>
+                                                Technicalities
+                                            </h4>
+                                            <ul class="d-inline-block align-left p-0" style="list-style-type: none;">
+                                                <li class="p-0">&#8226 Telegram Bot API</li>
+                                                <li class="p-0">&#8226 CNN Model using TensorFlow</li>
+                                                <li class="p-0">&#8226 Transfer Learning using ImageNet</li>
+                                                <li class="p-0">&#8226 99% Training Accuracy and 84% Test Accuracy</li>
+                                                <li class="p-0">&#8226 Deployed on Heroku</li>
+                                                <li class="p-0">&#8226 Ideation to Model Training to Deployment during Hackathon</li>
+                                                <li></li>
+                                            </ul>
+                                        </div>
+
+                                        <div class="container p3 mt-3">
+                                            <h4>
+                                                Tech Stack
+                                            </h4>
+                                            <div class="row">
+                                                <div class="col-lg-3 col-md-6 align-center">
+                                                    <img src="./images/telegram_bot_API.png" width="240" alt="" class="p-3">
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 align-center">
+                                                    <img src="./images/tensorflow.png" width="170" alt="" class="p-3">
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 align-center">
+                                                    <img src="./images/imagenet.png" width="260" alt="" class="p-3">
+                                                </div>
+                                                <div class="col-lg-3 col-md-6 align-center">
+                                                    <img src="./images/heroku.png" width="160" alt="" class="p-2">
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            
+                                            
+                                        </div>
+                                        
+                                    </div>
+
+                                    <div class="container mt-5">
+                                        <h4 id="takeaways">Process and Takeaways</h4>
+                                        <p class="justify">
+                                            Throughout this valuable learning experience, we had the opportunity to source for a suitable dataset 
+                                            for our Machine Learning model, perform Exploratory Data Analysis to identify any missing data and execute data 
+                                            imputation if necessary. We decided on the Stanford Dogs Dataset as it featured 20,000 images of 128 
+                                            classes of dog breeds that was sufficient for model training and contained a diverse selection of dog breeds.
+                                            <br><br>
+                                            We performed data preparation on the image dataset, such as image resizing, image 
+                                            transformation into numpy arrays and utilising TensorFlow documentation for data input pipeline 
+                                            building. Additionally, we underwent selection of the model, model building, model training and evaluation 
+                                            through performance testing. Through the model selection phase, we selected ImageNet as it 
+                                            was previously trained on similar datasets. We utilized a headless model and applied a dense layers to 
+                                            classifying the image into the 128 dog breed classes. 
+                                            <br><br>
+                                            During model training, we freeze the headless model while allowing the dense layer to train and undergo weight  
+                                            adjustments accordingly. Despite the high training accuracy of 99% on 10 epochs, there was a drop in the validation 
+                                            accuracy (84%) which could be showing signs of overfitting of the training data.
+                                            <br><br>
+                                            It was an enriching experience that opened my perception to the possibilities and capabilities of Deep Learning and Computer Vision.
+                                        </p>
+                                    </div>
+                                   
+						
+                                    </div>
+                                </div>
+                            </section>  
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Contact Me</h2>
+							<p>Feel free to contact me via Email or Linkedin!</p>
+							<!-- <ul class="actions">
+								<li><a href="generic.html" class="button">Learn More</a></li>
+							</ul> -->
+						</section>
+						<section>
+							<dl class="alt pt-2">
+								<dt>Email</dt>
+								<dd><a href="#" class="text-dark">jingwei33@hotmail.com</a></dd>
+                                <dt>Linkedin</dt>
+								<dd><a href="#" class="text-dark">https://www.linkedin.com/in/jingweisim/</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+        <!-- Bootstrap Scripts -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</body>
+</html>
