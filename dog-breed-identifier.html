@@ -86,22 +86,21 @@
                                                 classes of dog breeds that was sufficient for model training and contained a diverse selection of dog breeds that we adore.
                                                 <br><br>
                                                 We performed data preparation on the image dataset, such as image resizing, image 
-                                                transformation into numpy arrays and utilised TensorFlow documentation for data input pipeline 
-                                                building. Next, we underwent model selection, model building, model training and model evaluation 
-                                                through performance testing. Through the model selection phase, we selected ImageNet as it 
-                                                was previously trained on similar datasets. We utilized a feature extraction headless model and 
-                                                applied a dense layers to classifying the image into the 128 dog breed classes. 
+                                                transformation into numpy arrays and utilized TensorFlow for data input pipeline building. 
+                                                Next, we underwent model selection, model building, model training and model evaluation 
+                                                through performance testing. Through the model selection phase, utilized a feature extractor headless model from 
+                                                TensorFlow Hub that was trained on ImageNet and applied dense layers to classifying the image into the 128 dog breed classes. 
                                                 <br><br>
-                                                During model training, we froze the headless model and allowed the dense classification layers to undergo
-                                                training and weight adjustments. Despite the high training accuracy of 99% on 10 epochs, there was a drop 
-                                                in the validation accuracy (84%) which could be showing signs of overfitting of the training data.
+                                                During model training, we froze the feature extractor layer so that only the classification layers are being trained. 
+                                                Despite the high training accuracy of 99% on 10 epochs, there was a drop in the validation accuracy (84%) which could 
+                                                be showing signs of overfitting as the training loss and validation loss started to diverge as early as the second epoch.
                                             </p>
                                         </div>
 
                                         <div class="container">
                                             <h3 id="takeaways">Evaluation</h3>
                                             <p class="justify">
-                                                The model performed really well on certain dog breeds that had distinct features such as Poodles which
+                                                The model performed well on certain dog breeds that had distinct features such as Poodles which
                                                 have droopy ears and curly fur. On the other hand, it model has a hard time discerning between similar
                                                 looking dog breeds such as Japanese Spitz & Samoyed.
                                             </p>
