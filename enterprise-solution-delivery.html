@@ -23,13 +23,14 @@
 			<div id="wrapper">
 
 				<!-- Header -->
-					<header id="header" style="background-image: url(./images/delivery2.png); background-position: center;">
-                        <div class="container rounded alert alert-danger text-dark" style="width: 300px;">
-                            <h1 class="mt-3 mb-1">Projects</h1>
+                    <div class="header-text">
+                        <div class="foreground">
+                            <h1>Projects</h1>
                             <p>April 2021</p>
                         </div>
-                        <a href="./index.html#projects" class="btn btn-secondary px-3 mb-3 text-white">Back</a>
-                    </header>
+                        <a href="./index.html#projects" class="btn btn-secondary px-4 mb-3 text-white">Back</a>
+                    </div>
+					<header id="header" class="delivery-bg"></header>
                 <!-- Nav -->
                     <nav id="nav">
                         <ul>
@@ -47,12 +48,11 @@
 						<!-- Content -->
 							<section id="content" class="main">
 
-                                <div id="intro" class="container w-100 p-4">
+                                <div id="intro" class="container w-100 p-0">
                                     <h1>Delivery Platform Enterprise Solution</h1>
                                     <br>
                                     <p>
                                         Our team came up with an <b><span style="color: #e37682;">Enterprise Solution (Delivery Platform)</b></span> concept and developed it for a coursework (IS213 Enterprise Solution Development) in April 2021. 
-                                        <br><br>
                                         The Enterprise Solution is built on the Microservices Architecture and focuses on server-side architectural design. 
                                         The design emphasizes on developing loosely-coupled and reusable simple services, and leverages on composite services as the orchestrator to invoke sequences of events. 
                                         <br><br>
@@ -70,169 +70,170 @@
 
                                     <div id="carouselExampleControls" class="carousel slide border rounded p-3" data-ride="carousel">
                                         <div class="carousel-inner">
-                                          <div class="carousel-item active">
+                                            <div class="carousel-item active">
                                             <img class="d-block w-100" src="images/tech_overview1.png" alt="First slide">
                                             <h5 class ="align-center">Technical Overview 1</h5>
-                                          </div>
-                                          <div class="carousel-item">
+                                        </div>
+                                            <div class="carousel-item">
                                             <img class="d-block w-100" src="images/tech_overview2.png" alt="Second slide">
                                             <h5 class ="align-center">Technical Overview 2</h5>
-                                          </div>
+                                        </div>
                                         </div>
                                         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                          <span aria-hidden="true"><img src="./images/arrow-left.png" alt="" width="30"></span>
-                                          <span class="sr-only">Previous</span>
+                                            <span aria-hidden="true"><img src="./images/arrow-left.png" alt="" width="30"></span>
+                                            <span class="sr-only">Previous</span>
                                         </a>
                                         <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
                                         <span aria-hidden="true"><img src="./images/arrow-right.png" alt="" width="30"></span>
-                                          <span class="sr-only">Next</span>
+                                            <span class="sr-only">Next</span>
                                         </a>
                                     </div>
 
                                     
-                                    <div class="container mt-5 mb-3">
+                                    <div class="container mt-5 mb-3 p-0">
                                         <h3>User Scenarios</h3>
                                         <ul class="d-inline-block align-left p-0" style="list-style-type: none;">
-                                            <li class="p-0"><b><span style="color: #e37682;">01</span></b> User SignUp and Login</li>
-                                            <li class="p-0"><b><span style="color: #e37682;">02</span></b> Customer creates New Delivery Order</li>
-                                            <li class="p-0"><b><span style="color: #e37682;">03</span></b> Customer makes Payment</li>
+                                            <li class="p-0"><b><span style="color: #78a0d4;">01</span></b> User SignUp and Login</li>
+                                            <li class="p-0"><b><span style="color: #78a0d4;">02</span></b> Customer creates New Delivery Order</li>
+                                            <li class="p-0"><b><span style="color: #78a0d4;">03</span></b> Customer makes Payment</li>
                                             <li class="p-0"><b>04</b> Driver views all or specific Schedule</li>
                                             <li class="p-0"><b>05</b> Driver Updates a Delivery</li>
-                                            <li class="p-0"><b><span style="color: #e37682;">06</span></b> Customer Views Delivery Details and Status</li>
+                                            <li class="p-0"><b><span style="color: #78a0d4;">06</span></b> Customer Views Delivery Details and Status</li>
                                             <li></li>
                                         </ul>
                                     </div>
 
-                                    <div class="container mb-3">
+                                    <div class="container mb-3 p-0">
                                         <h3 class="mb-3">
                                             Technicalities
                                         </h3>
                                         <ul class="d-inline-block align-left p-0" style="list-style-type: none;">
-                                            <p class="m-0"><b>Services</b></p>
-                                            <li class="p-0">&#8226 Microservices Architecture (9 Simple and 7 Composite Microservices)</li>
-                                            <li class="p-0">&#8226 Telegram Chatbot as a Composite Microservice to automate Notification Registration</li>
+                                            <p class="m-0"><b>Microservices (MS)</b></p>
+                                            <li class="p-0"><b><span style="color: #e37682;">Atomic MS: </span></b></li>
+                                            <li class="p-0" >&#8226 Login, Customer, Driver, Delivery, Schedule, Payment</li>
+                                            <li class="p-0"><b><span style="color: #e37682;">Composite MS: </span></b></li>
+                                            <li class="p-0">&#8226 <i>Orchestration Pattern</i></li>
+                                            <li class="p-0">&#8226 RegisterUser, RegisterTelegramNotification (TelegramBot), ProcessOrder, ScheduleDriver, CustomerViewDetails, DriverViewDetails, CompleteDelivery</li>
+                                            <li class="p-0">&#8226 RegisterTelegramNotification uses the TelegramBot platform to automate Notification Registration</li>
+                                            <li class="p-0"><b><span style="color: #e37682;">Subscribers: </span></b></li>
+                                            <li class="p-0">&#8226 CustomerNotification, DriverNotification, Error</li>
                                             <p class="m-0 pt-2"><b>Communication Protocol</b></p>
-                                            <li class="p-0">&#8226 Synchronous Communication via HTTP RESTful APIs (Flask & Telegram Bot)</li>
-                                            <li class="p-0">&#8226 Asynchronous Communication via AMQP for User Notifications (RabbitMQ)</li>
-                                            <li class="p-0">&#8226 Topic Exchange to direct messages to Customer, Driver and Error Queues</li>
+                                            <li class="p-0">&#8226 Synchronous <b><span style="color: #f38f4c;">HTTP RESTful APIs</span></b> (Flask & TelegramBot)</li>
+                                            <li class="p-0">&#8226 Asynchronous <b><span style="color: #f38f4c;">Message-based</span></b> User Notifications (RabbitMQ, AMQP)</li>
+                                            <!-- <li class="p-0">&#8226 Topic Exchange to direct messages to Customer, Driver and Error Queues</li> -->
                                             <p class="m-0 pt-2"><b>External APIs</b></p>
-                                            <li class="p-0">&#8226 Stripe API for payment, Google Matrix Distance for Delivery Distances and Time, Telegram API for Notifications</li>
+                                            <li class="p-0">&#8226 Stripe API for Payment, Google Matrix Distance for Delivery Distances and Time, Telegram API for Notifications</li>
                                             <p class="m-0 pt-2"><b>Other Technologies</b></p>
-                                            <li class="p-0">&#8226 Deployed to Docker containers using Docker Compose for each Services</li>
-                                            <li class="p-0">&#8226 API Gateway using Kong and Konga</li>
+                                            <li class="p-0">&#8226 Deployed to <b><span style="color: #78a0d4;">Docker</span></b> containers using <b><span style="color: #78a0d4;">Docker Compose</span></b> for each Services</li>
+                                            <li class="p-0">&#8226 Kong API Gateway</li>
                                             <p class="m-0 pt-2"><b>Databases</b></p>
-                                            <li class="p-0">&#8226 PostgresSQL to store Kong configurations</li>
-                                            <li class="p-0">&#8226 Database per Service Pattern</li>
-                                            <li class="p-0">&#8226 AWS RDS (mySQL)</li>
+                                            <li class="p-0">&#8226 <i>Database per Service Pattern</i></li>
+                                            <li class="p-0">&#8226 <b><span style="color: #78a0d4;">AWS RDS</span></b> (mySQL)</li>
+                                            <li class="p-0">&#8226 <b><span style="color: #78a0d4;">PostgresSQL</span></b> to store Kong configurations</li>
                                             
                                         </ul>
                                     </div>
 
-                                    <div id="demo" class="container p-3">
+                                    <div id="demo" class="container py-3 px-0">
                                         <h3>Solution Demo</h3>
-                                        <p class="alert alert-secondary border-light mb-4">
-                                            This demo covers the point of view of the Customer.
-                                            It consists of User Scenario <b><span style="color: #e37682;">01, 02, 03</span></b> and <b><span style="color: #e37682;">06</span></b>.
+                                        <p class="alert alert-success border-light mb-4">
+                                            The demo showcases User Scenario 
+                                            <b><span style="color: #e37682;">01, 02, 03</span></b> and <b><span style="color: #e37682;">06</span></b>
+                                            from the Customer point of view. 
                                         </p>
+                                        <!-- <video class="rounded" width="100%" height="auto" autoplay="autoplay" loop="true" controls> -->
                                         <video class="rounded" width="100%" height="auto" controls>
-                                            <source src="./images/esd.mp4" type="video/mp4">
+                                            <source src="./images/esd2.mp4" type="video/mp4">
                                         </video>
                                     </div>
 
-                                    <div id="tech-stack" class="container pt-3 mt-3">
-                                        <h3>
-                                            Tech Stack
-                                        </h3>
+                                    <div id="tech-stack" class="container pt-3 mt-3 px-0">
+                                        <h3 class="pb-2">Tech Stack</h3>
                                         <br>
-                                        <h5><b><span style="color: #e37682;">Front-End</span></b></h5>
+                                        <span class="d-inline-block pr-2"><h5><b><span style="color: #e37682;">Front-End:</span></b></h5></span>
+                                        <span class="d-inline-block"><p>Bootstrap, HTML, CSS, JavaScript, Vue.js, jQuery, FullCalendar, Popper.js</p></span>
                                         <div class="row">
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/bootstrap.png" width="160" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/bootstrap.png" width="130" alt="" class="p-3">
                                             </div>
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/frontend.png" width="220" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/frontend.png" width="210" alt="" class="p-3">
                                             </div>
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/vue.png" width="130" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/vue.png" width="110" alt="" class="p-3">
                                             </div>
-                                        <!-- </div> -->
-                                        <!-- <div class="row"> -->
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/jquery.png" width="200" alt="" class="p-3">
+
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/jquery.png" width="170" alt="" class="p-3">
                                             </div>
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/full_calendar.png" width="220" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/full_calendar.png" width="200" alt="" class="p-3">
                                             </div>
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/popper_js.png" width="150" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/popper_js.png" width="130" alt="" class="p-3">
                                             </div>
                                         </div>
                                         <br>
-                                        <h5><b><span style="color: #e37682;">BackEnd</span></b></h5>
+                                        <span class="pr-2 d-inline-block"><h5><b><span style="color: #e37682;">BackEnd:</span></b></h5></span>
+                                        <span class="d-inline-block"><p>Flask, RabbitMQ, Google Matrix API, TelegramBotAPI, Stripe API, 
+                                            Kong API Gateway, Docker, Docker Compose, PostgresSQL, AWS RDS</p></span>
                                         <div class="row m-3">
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/flask.png" width="120" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/flask.png" width="110" alt="" class="p-3">
                                             </div>
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/rabbitmq.png" width="140" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/rabbitmq.png" width="120" alt="" class="p-3">
                                             </div>
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/google_dist_matrix.png" width="150" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/google_dist_matrix.png" width="130" alt="" class="p-3">
                                             </div>
-                                        <!-- </div> -->
-                                        <!-- <br> -->
-                                        <!-- <div class="row my-4"> -->
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/telegram_bot_API.png" width="240" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/telegram_bot_API.png" width="225" alt="" class="p-3">
                                             </div>
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/stripe.png" width="170" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/stripe.png" width="140" alt="" class="p-3">
                                             </div>
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/kong.png" width="230" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/kong.png" width="200" alt="" class="p-3">
                                             </div>
-                                        <!-- </div> -->
-                                        <!-- <div class="row"> -->
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/docker.png" width="160" alt="" class="p-3">
+                                        
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/docker.png" width="140" alt="" class="p-3">
                                             </div>
                                             
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/docker_compose.png" width="180" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/docker_compose.png" width="160" alt="" class="p-3">
                                             </div>
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/postgres.png" width="120" alt="" class="p-3">
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/postgres.png" width="110" alt="" class="p-3">
                                             </div>
-                                        <!-- </div> -->
-                                        <!-- <div class="row"> -->
-                                            <div class="col-lg-4 col-md-6 align-center">
-                                                <img src="./images/aws_rds.png" width="180" alt="" class="p-3">
+                                        
+                                            <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                                <img src="./images/aws_rds.png" width="160" alt="" class="p-3">
                                             </div>
                                             
-                                        <!-- </div> -->
                                     </div>
 
-                                    <div class="container mt-5">
+                                    <div class="container mt-5 p-0">
                                         <h4 id="takeaways">Takeaways</h4>
                                         <p class="justify">
-                                            It a really fun and enriching experience and I learnt immensely from this coursework in terms of designing Microservice-based 
-                                            architectures that focus on modularity and reusability, developing a Full-Stack Enterprise Solution as well as experiencing 
-                                            how the different components of the IT solution come together.
+                                            It was a really fun and enriching experience and I learnt immensely from this coursework in designing Microservices
+                                            architecture that focuses on modularity and reusability, developing a Full-Stack Enterprise Solution and experiencing 
+                                            how the different components of the IT solution complement one another.
                                             <br><br>
-                                            I had the opportunity to explore various technologies that were used for different purposes and utilised external API
-                                            calls such as Stripe payment services to enhance the functionality of our IT solution. Additionally, I had the opportunity to 
-                                            experience building Back-End processes such as synchronous HTTP REST APIs, asynchronous messaging-based AMQP services
-                                            and Telegram Chatbot as an orchestrator. Lastly, I had fun utilizing deployment tools such as Docker, Docker 
-                                            Compose and Kong API Gateway.
+                                            I had the opportunity to explore various technologies that were used for different purposes and utilized external API
+                                            calls such as Stripe payment service to enhance the functionality of our IT solution. Additionally, I had the opportunity to 
+                                            experience building Back-End processes such as HTTP REST APIs, messaging-based AMQP services
+                                            and Telegram Chatbot as a composite microservice. Lastly, I had the chance to employ deployment tools such as Docker, Docker 
+                                            Compose and middleware such as Kong API Gateway.
                                             <br><br>
-                                            This project was such a fulfilling one and it widened my perception of the concept of Enterprise Solutions, design patterns, 
+                                            This project was such a fulfilling one and it widened my perception of Enterprise Solutions concepts, design patterns, 
                                             interactions between Microservices and integration between client-side interfaces and downstream services. 
-                                            10/10 
+                                            Looking forward to future projects!
                                         </p>
                             
                                     </div>
 
-                                   
                                     <!-- </div> -->
                                 </div>
                             </section>  
@@ -244,25 +245,25 @@
 							<h2>Contact Me</h2>
 							<p>Feel free to contact me via Email or Linkedin!</p>
                             <ul class="actions">
-								<li><a href="generic.html" class="button">Hope you enjoyed it!</a></li>
+								<li><a href="#" class="button">Hope you enjoyed it!</a></li>
 							</ul>
 						</section>
 						<section>
 							<dl class="alt pt-2">
 								<dt>Email</dt>
-								<dd><a href="#" class="text-dark">jingwei33@hotmail.com</a></dd>
+								<dd><a href="mailto:jingwei33@hotmail.com" class="text-dark">jingwei33@hotmail.com</a></dd>
                                 <dt>Linkedin</dt>
-								<dd><a href="#" class="text-dark">https://www.linkedin.com/in/jingweisim/</a></dd>
+								<dd><a href="https://www.linkedin.com/in/jingweisim/" class="text-dark">/in/jingweisim/</a></dd>
 							</dl>
 							<ul class="icons">
-								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/in/jingweisim/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
 								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
 								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
 								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
 							</ul>
 						</section>
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Jingweisim2021. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 
