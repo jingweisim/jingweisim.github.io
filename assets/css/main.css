@@ -2500,7 +2500,7 @@ input, select, textarea {
             width: 310px;
             max-width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 1em;
         }
 
         img.tech-overview{
@@ -2583,7 +2583,8 @@ input, select, textarea {
 	}
 
 	dl dt {
-		color: #ffffff;
+		/* color: #ffffff; */
+		color: black;
 	}
 
 /* Actions */
@@ -2708,6 +2709,13 @@ input, select, textarea {
 
 		}
 
+/* Iconify */
+.iconify {
+    width: 3em; 
+    height: auto;
+    color: #313131;
+}
+
 /* Icons */
 
 	ul.icons {
@@ -2734,6 +2742,10 @@ input, select, textarea {
 	header.major {
 		margin-bottom: 3em;
 	}
+        header.major h3 {
+            font-size: 55px;
+            color: black;
+        }
 
 		header.major h2 {
 			font-size: 2em;
@@ -2776,6 +2788,9 @@ input, select, textarea {
 		header.major {
 			margin-bottom: 0;
 		}
+            header.major h3 {
+                font-size: 45px;
+            }
 
 			header.major h2 {
 				font-size: 1.5em;
@@ -2974,9 +2989,22 @@ input, select, textarea {
 			-ms-flex: 1;
 			flex: 1;
 			padding: 1.5em;
-			color: #ffffff;
+			/* color: #ffffff; */
+			color: #313131;
 			text-align: center;
 		}
+            .statistics .style6 strong {
+                font-weight: 400;
+            }
+
+            .statistics .style7 strong {
+                font-weight: 400;
+            }
+
+            .statistics .style8 strong {
+                font-weight: 400;
+            }
+
 
 			.statistics li.style1 {
 				background-color: #efa8b0;
@@ -3070,7 +3098,7 @@ input, select, textarea {
 				}
 
 				.statistics li strong, .statistics li b {
-					font-size: 2.5em;
+					font-size: 2em;
 				}
 
 		}
@@ -3098,7 +3126,18 @@ input, select, textarea {
             flex: 53%;
             text-align: left;
             padding: 2em 0 0 0;
+            
         }
+            .landing .right .info{
+                font-weight: 500;
+                font-size: 22px;
+                margin: 1.1em 0 1.1em 0;
+                color: #4d4d4d;
+            }
+            
+            .landing .right .style8 {
+				background-color: #90ACD1;
+			}
 
         @media screen and (max-width: 980px) {
             .landing .left {
@@ -3131,6 +3170,13 @@ input, select, textarea {
         }
 
         @media screen and (max-width: 736px) {
+            .landing .right {
+                padding: 16px 0 0 0;
+            }
+            .landing .right .info {
+                font-size: 18px;
+            }
+
             .landing .left img{
                 width: 13em;
             }
