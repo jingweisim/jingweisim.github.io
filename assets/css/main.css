@@ -99,12 +99,7 @@ input, select, textarea {
 	}
 
 	body {
-        /* background-image: url('../../images/forest.jpg');
-        background-position: center;
-        background-repeat: no-repeat; */
-        /* background-size: cover; */
-        /* height: 100%; */
-		background-color: #e37682;
+		/* background-color: #e37682; */
         background-image: url("images/overlay.png"), -moz-linear-gradient(45deg,  #C38D9E 15%,#FAF0E6 85%);
 		background-image: url("images/overlay.png"), -webkit-linear-gradient(45deg, #C38D9E 15%,#FAF0E6 85%);
 		background-image: url("images/overlay.png"), -ms-linear-gradient(45deg, #C38D9E 15%,#FAF0E6 85%);
@@ -127,8 +122,6 @@ input, select, textarea {
 	body {
 		/* background-color: #e37682; */
 		color: rgba(255, 255, 255, 0.65);
-        /* background-image: url(./images/trees.png); 
-        background-position: center; */
 	}
 
 	body, input, select, textarea {
@@ -344,6 +337,14 @@ input, select, textarea {
     }
 
 /* Card */
+    .card {
+        box-shadow: 0 2px 4px 0 rgba(182, 181, 181, 0.5);
+        width: auto;
+        height: auto;
+    }
+
+
+/* Card Images */
     .container {
         position: relative;
         width: 50%;

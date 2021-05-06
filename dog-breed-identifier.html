@@ -22,6 +22,7 @@
 			<div id="wrapper">
 
 				<!-- Header -->
+                <div style="overflow: hidden;">
                     <div class="header-text">
                         <div class="foreground">
                             <h1>Projects</h1>
@@ -30,7 +31,7 @@
                         <a href="/#projects" class="btn btn-secondary px-4 mb-3 text-white">Back</a>
                     </div>
 					<header id="header" class="doggo-bg"></header>
-
+                </div>
                     <!-- Nav -->
                     <nav id="nav">
                         <ul>
@@ -54,7 +55,7 @@
                                     <b><span style="color: #e37682;">Hack&Roll 2021 </span></b> was a 24 hours Hackathon that spanned from 8 to 9 Jan 2021.
                                     <br><br>
                                     As a fun side project to explore and learn more about Machine Learning and Software Development, our team decided to develop a Dog Breed 
-                                    Classification model &#128021 and host it on a Telegram Chatbot.
+                                    Classification model &#128021 and host it on a Telegram Bot.
                                     <br><br>
                                     A quick <b><span style="color: #e37682;">run</span></b> through of the Bot:
                                 </p>
@@ -68,10 +69,10 @@
                                 <div id="details" class="container px-1 pb-1 pt-3 mb-3">
                                     <h3>Description</h3>
                                     <p>
-                                        The Telegram Chatbot allows users to submit an image of a dog and on the backend,
+                                        The Telegram Bot allows users to submit an image of a dog and on the backend,
                                         the image is being processed and passed into the Convolutional Neural Network 
                                         model to predict the class and classify the breed. If users were to send a text-based message 
-                                        to the Telegram Chatbot, the Bot will reply with an image or gif of a dog instead
+                                        to the Telegram Bot, the Bot will reply with an image or gif of a dog instead
                                         while it awaits a dog image from the user.
                                     </p>
                                 </div>
@@ -86,9 +87,9 @@
                                         <br><br>
                                         We performed data preparation on the image dataset, such as image resizing, image 
                                         transformation into numpy arrays and data input pipeline building using TensorFlow. 
-                                        Next, we underwent model selection, building, training and evaluation. Through the model selection phase, 
-                                        we selected MobileNetV2 feature extractor headless model from TensorFlow Hub that was trained on ImageNet datasets and 
-                                        applied dense layers to classifying the image into the 128 dog breed classes.
+                                        Next, we underwent model selection, building, training and evaluation. Through the model selection phase, we decided on
+                                        a simple transfer learning approach. We selected MobileNetV2 feature vector headless model from TensorFlow Hub that was 
+                                        trained on ImageNet images and applied dense layers to classify the image into the 128 dog breed classes.
                                         <br><br>
                                     </p>
                                 </div>
@@ -97,11 +98,14 @@
                                     <h3>Evaluation</h3>
                                     <p class="justify">
                                         During model training, we froze the feature extractor layer so that only the weights in the classification layers are being updated. 
-                                        Despite the high training accuracy of 99% on 10 epochs, there was a drop in validation accuracy (84%) which could 
-                                        be showing signs of overfitting as the training loss and validation loss started to diverge as early as the second epoch.
+                                        Despite the high training accuracy of 99% on 10 epochs, there was a drop in validation accuracy (84%) which could be
+                                        showing signs of overfitting as the training loss and validation loss started to diverge as early as the second epoch.
+                                        
                                         <br><br>
                                         The model performed well on certain dog breeds that had distinct features such as Poodles (eg. curly fur). 
                                         On the other hand, the model has a hard time discerning between similar looking dog breeds such as Japanese Spitz and Samoyed.
+                                        Further fine tuning of the model can be considered by initializing the training process with both the classification layers and 
+                                        the top layers of the MobileNetV2. This allows the model to be more adapted to the dogs dataset without overwriting the generic learning.
                                         
                                     </p>
                                 </div>
@@ -132,7 +136,7 @@
                                             <img src="./images/tensorflow.png" width="170" alt="" class="p-3">
                                         </div>
                                         <div class="col-lg-3 col-md-6 align-center">
-                                            <img src="./images/imagenet.png" width="260" alt="" class="p-3">
+                                            <img src="./images/tf_hub.png" width="260" alt="" class="p-3">
                                         </div>
                                         <div class="col-lg-3 col-md-6 align-center">
                                             <img src="./images/heroku.png" width="160" alt="" class="p-2">
@@ -143,9 +147,7 @@
                             <!-- </div> -->
 
                                 <div class="container p-3 mb-3">
-                                    <h3>
-                                        Gallery
-                                    </h3>
+                                    <h3>Gallery</h3>
                                 </div>
 
                                 <div id="carouselExampleControls" class="carousel slide border rounded p-3" data-ride="carousel">
