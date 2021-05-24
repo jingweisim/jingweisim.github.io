@@ -1,5 +1,6 @@
 @import url(fontawesome-all.min.css);
 @import 'https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400';
+@import 'https://fonts.googleapis.com/css?family=Roboto';
 
 /*
 	Stellar by HTML5 UP
@@ -2744,7 +2745,7 @@ input, select, textarea {
 		margin-bottom: 3em;
 	}
         header.major h3 {
-            font-size: 55px;
+            font-size: 40px;
             color: black;
         }
 
@@ -2790,7 +2791,7 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
             header.major h3 {
-                font-size: 45px;
+                font-size: 35px;
             }
 
 			header.major h2 {
@@ -3129,18 +3130,27 @@ input, select, textarea {
             padding: 2em 0 0 0;
             
         }
+
+            .landing .right h5 {
+                max-width: 20em;
+            }
+
             .landing .right .info{
                 font-weight: 500;
                 font-size: 22px;
                 margin: 1.1em 0 1.1em 0;
                 color: #4d4d4d;
             }
+
             
             .landing .right .style8 {
 				background-color: #90ACD1;
 			}
 
         @media screen and (max-width: 980px) {
+            .landing .right h5 {
+                max-width: 100%;
+            }
             .landing .left {
                 padding: 1em 4em 0 0;
             }
@@ -3174,6 +3184,7 @@ input, select, textarea {
             .landing .right {
                 padding: 16px 0 0 0;
             }
+            
             .landing .right .info {
                 font-size: 18px;
             }

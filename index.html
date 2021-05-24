@@ -10,15 +10,18 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-2GZ9JSPRNE"></script>
         <script src="./assets/js/gtag.js"></script>
 
-		<title>Jingwei Home</title>
+		<title>Jingwei's Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
 	</head>
-	<body class="is-preload">
+	<body class="is-preload" style="font-family: 'Roboto';">
 
 		<!-- Wrapper -->
             <!-- Nav -->
@@ -42,12 +45,13 @@
                                 </div>
                                 <div class="right">
                                     <header class="major m-0">
-                                        <h3>Jingwei</h3>
+                                        <h3><span id="typed"></span></h3>
                                     </header>
-                                    <h4 class="info">
-                                        <span>Hello there!</span> <br>
-                                        Welcome to my website.
-                                    </h4>
+                                    <br>
+                                    <h5>Currently pursuing Information Systems and a second major in Artificial Intelligence at 
+                                        <b><span style="color: #e37682;"> SMU</span></b>.
+                                    </h5>
+                                    <br>
                                     <a href="#footer" class="button style8">Contact Me!</a>
                                 </div>
                             </div>
@@ -67,11 +71,11 @@
 											<h2>About Myself</h2>
 										</header>
 										<p>
-                                            I am currently pursing a <b>BSc degree</b>, dual track <b>Major in Information Systems</b> 
-                                            (<i>Business Analytics and Digitalization & Cloud Solutions</i>) with a <b>Second Major in Computing Studies</b> 
-                                            (<i>Artificial Intelligence</i>) at <b><span style="color: #e37682;"> Singapore Management University</span></b>.
+                                            I am currently a Year 2 School of Computing & Information Systems student at <b> Singapore Management University</b>.
                                             <br><br>
-                                            I have a keen interest in Software Development & Machine Learning. <br> I am also a movie enthusiast and avid reader in my free time!
+                                            I have a keen interest in <mark>Software Development & Machine Learning</mark> and I enjoy building meaningful solutions that simplify the lives of others.
+                                            I am also a movie enthusiast and avid reader in my free time!
+                                            
                                         </p>
 									</div>
 									<span class="image2"><img src="images/table2.jpg" width="400" alt="" /></span>
@@ -86,23 +90,39 @@
                                         <h2>Interests & Skills</h2>
                                     </header>
                                 </div>
-                                <ul class="statistics" style="font-size: 12px;">
-                                    <li class="style6 my-auto">
-                                        <span class="iconify" data-icon="bx-bx-code-block" data-inline="false"></span>
-                                        <strong>Software Development</strong>
-                                    </li>
-                                    <li class="style7">
-                                        <span class="iconify" data-icon="carbon:machine-learning-model" data-inline="false"></span>
-                                        <strong>Machine Learning</strong>
-                                    </li>
-                                    <li class="style8">
-                                        <span class="iconify" data-icon="carbon:chart-line-data" data-inline="false"></span>
-                                        <strong>Data Analytics</strong>
-                                    </li>
-                                </ul>
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <ul class="statistics" style="font-size: 10px;">
+                                            <li class="style8 my-auto rounded">
+                                                <span class="iconify" data-icon="bx-bx-code-block" data-inline="false"></span>
+                                                <strong>Software Development</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <ul class="statistics" style="font-size: 10px;">
+                                            <li class="style7 rounded">
+                                                <span class="iconify" data-icon="carbon:machine-learning-model" data-inline="false"></span>
+                                                <strong>Artificial Intelligence</strong>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <ul class="statistics" style="font-size: 10px;">
+                                            <li class="style6 rounded">
+                                            <span class="iconify" data-icon="carbon:chart-line-data" data-inline="false"></span>
+                                            <strong>Data Science & Analytics</strong>
+                                        </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <p></p>
+                                </div>
                                 
-                                <!-- <div class="container align-left"> -->
-                                <div class="interests">
+                                <!-- <div class="interests">
                                     <div class="interests left">
                                         <ul class="d-inline-block align-left p-0" style="list-style-type: none;">
                                             <li><b>01. </b>Python</li>
@@ -114,11 +134,9 @@
                                             <li><b>07. </b> Machine Learning (Scikit-Learn, TensorFlow)</li>
                                             <li><b>08. </b> UI/UX (Figma)</li>
                                             <li><b>09. </b> Telegram Bot</li>
-                                            <li><b>10. </b> Ubuntu</li>
                                         </ul>
                                     </div>
-                                    <!-- <div class="interests right"><img src="./images/UI2.jpg" alt=""></div> -->
-                                </div>
+                                </div> -->
                                 
 							</section>
 
@@ -126,14 +144,16 @@
 							<section id="projects" class="main special">
 								<header class="major">
 									<h2>Projects</h2>
-									<p>Projects on Machine Learning and Software Development.</p>
+									<p>Projects on Software Development and Machine Learning.
+                                    </p>
 								</header>
+
 
                                 
                                 <div class="row">
 
-                                    <div class="col-lg-6">
-                                        <div class="container p-0 m-1 mx-auto">
+                                    <div class="project ai col-lg-6">
+                                        <div class=" container p-0 m-1 mx-auto">
                                             <img src="./images/doggo.png" alt="Avatar" class="card-image">
                                             <a href="./dog-breed-identifier.html">
                                             <div class="overlay style1">
@@ -144,8 +164,8 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6">
-                                        <div class="container p-0 m-1 mx-auto">
+                                    <div class="project sd col-lg-6">
+                                        <div class=" container p-0 m-1 mx-auto">
                                             <img src="./images/delivery2.png" alt="Avatar" class="card-image">
                                             <a href="./enterprise-solution-delivery.html">
                                             <div class="overlay style2" >
@@ -174,8 +194,7 @@
                                                     <p class="card-title bg-white font-italic">
                                                         Singapore Management University (SMU)
                                                     </p>
-                                                    <div class="align-left mb-4">Teaching Assistant for Computational Thinking (CORIS1702) module.
-                                                        <br>
+                                                    <div class="align-left mb-4">Teaching Assistant for Computational Thinking (CORIS1702) module for a class of 43 students.
                                                         Guided students through fundamental data structures, algorithm design and time complexity analysis.
                                                     </div>
                                                     <div class="btn btn-secondary" style="border-radius: 20px; pointer-events: none;">Jan 2021 - April 2021</div>
@@ -229,9 +248,6 @@
                         <ul class="icons">
                             <li><a href="https://www.linkedin.com/in/jingweisim/" class="icon brands fa-linkedin alt"><span class="label">Linkedin</span></a></li>
                             <li><a href="mailto:jingwei33@hotmail.com" class="icon fa-envelope alt"><span class="label">Envelope</span></a></li>
-                            <!-- <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-                            <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-                            <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li> -->
                         </ul>
                     </section>
                     <p class="copyright">&copy; 2021 Jingweisim. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
@@ -240,6 +256,7 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/typed.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
