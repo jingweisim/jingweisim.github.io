@@ -30,7 +30,7 @@
                         </div>
                         <a href="/#projects" class="btn btn-secondary px-4 mb-3 text-white">Back</a>
                     </div>
-					<header id="header" class="doggo-bg"></header>
+					<header id="header" class="doggo-bg"></z>
                 </div>
                     <!-- Nav -->
                     <nav id="nav">
@@ -65,45 +65,18 @@
                                     </div>
                                 </div>
 
-                                <div id="details" class="container px-1 pb-1 pt-3 mb-3">
+                                <div id="details" class="container px-1 pb-1 pt-3 mb-1">
                                     <h3>Description</h3>
                                     <p>
                                         The Telegram Bot allows users to submit an image of a dog and on the backend,
-                                        the image is being processed and passed into the Convolutional Neural Network 
-                                        model to predict the class and classify the breed. If users were to send a text-based message 
-                                        to the Telegram Bot, the Bot will reply with an image or gif of a dog instead
-                                        while it awaits a dog image from the user.
+                                        the image is being normalized and passed into the Convolutional Neural Network 
+                                        model to predict the breed class. If users were to send a text-based message 
+                                        to the Telegram Bot, the Bot will reply with an image or gif of a dog instead!
                                     </p>
                                 </div>
 
-                                <div class="container p-1">
-                                    <h3>Process</h3>
-                                    <p class="justify">
-                                        We selected the Stanford Dogs Dataset (20,000 images and 128 classes of dog breeds) and performed EDA and data preparation on the dataset.
-                                        For this project, we utilized TensorFlow to build the data input pipline and CNN model.
-                                        We also decided on a simple transfer learning approach and selected MobileNetV2 feature vector headless 
-                                        model from TensorFlow Hub that was trained on ImageNet images and applied dense layers to classify the image into the 128 dog breed classes.
-                                        <br><br>
-                                    </p>
-                                </div>
 
-                                <div class="container p-1 mb-3">
-                                    <h3>Evaluation</h3>
-                                    <p class="justify">
-                                        We froze the feature extractor layer and trained the model on 10 epochs. 
-                                        Despite the high 99% training accuracy, there was a drop in validation accuracy (84%) which could be
-                                        showing signs of overfitting as the training loss and validation loss started to diverge as early as the second epoch.
-                                        
-                                        <br><br>
-                                        The model performed well on certain dog breeds that had distinct features such as Poodles (eg. curly fur). 
-                                        On the other hand, the model has a hard time discerning between similar looking dog breeds such as Japanese Spitz and Samoyed.
-                                        Further fine tuning of the model can be considered by initializing the training process with both the classification layers and 
-                                        the top layers of the MobileNetV2. This allows the model to be more adapted to the dogs dataset without overwriting the generic learning.
-                                        
-                                    </p>
-                                </div>
-
-                                <div class="container p-1 mb-3">
+                                <div class="container p-1 mb-1">
                                     <h3>
                                         Technicalities
                                     </h3>
@@ -111,9 +84,9 @@
                                         <li class="p-0">&#8226 Telegram Bot API</li>
                                         <li class="p-0">&#8226 CNN Model using TensorFlow</li>
                                         <li class="p-0">&#8226 Transfer Learning using MobileNetV2</li>
+                                        <li class="p-0">&#8226 Stanford Dogs Dataset (20,000 images and 128 classes of dog breeds)</li>
                                         <li class="p-0">&#8226 99% Training Accuracy | 84% Validation Accuracy</li>
                                         <li class="p-0">&#8226 Deployed to Heroku</li>
-                                        <!-- <li class="p-0">&#8226 Ideation to Model Training to Deployment during Hackathon</li> -->
                                         
                                         <li></li>
                                     </ul>
@@ -138,14 +111,10 @@
                                 </div>
                                     
 
-                                <div class="container my-5">
+                                <div class="container mb-5">
                                     <h3 id="takeaways">Takeaways</h3>
                                     <p class="justify">
-                                        It was a really fun and rewarding learning experience that featured many ups and downs during the 24 hours.
-                                        However, we ultimately managed to deploy our solution successfully and gained so much from this fulfilling
-                                        experience. 
-                                        It was an enriching hackathon that opened my perception to the possibilities and capabilities of Deep Learning and Computer Vision.
-                                        
+                                        It was a really fun and rewarding learning experience. It was an enriching hackathon that opened my perception to the possibilities and capabilities of Deep Learning and Computer Vision.    
                                     </p>
                                 </div>
                     

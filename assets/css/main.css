@@ -2791,7 +2791,7 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
             header.major h3 {
-                font-size: 35px;
+                font-size: 30px;
             }
 
 			header.major h2 {
@@ -3186,6 +3186,10 @@ input, select, textarea {
             }
             
             .landing .right .info {
+                font-size: 18px;
+            }
+
+            .landing .right h5 {
                 font-size: 18px;
             }
 
