@@ -1,7 +1,7 @@
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 
 var typed = new Typed('#typed', {
-    strings: ["hello!","i'm Jingwei", "Welcome to my website."],
+    strings: ["hello!", "Welcome to my projects."],
     typeSpeed : 50,
     backSpeed: 20,
     backDelay: 1400,
