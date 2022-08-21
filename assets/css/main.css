@@ -340,8 +340,12 @@ input, select, textarea {
 /* Card */
     .card {
         box-shadow: 0 2px 4px 0 rgba(182, 181, 181, 0.5);
-        width: auto;
+        width: 100%;
         height: auto;
+    }
+
+    .work-experience-card {
+        max-height: 300px;
     }
 
 
@@ -408,6 +412,31 @@ input, select, textarea {
         transform: translate(-50%, -50%);
         text-align: center;
     }
+
+/* Card Column */
+    /* @media (min-width: 576px) {
+        .card-columns {
+            column-count: 1;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .card-columns {
+            column-count: 2;
+        }
+    } */
+
+    /* @media (min-width: 992px) {
+        .card-columns {
+            column-count: 2;
+        }
+    } */
+
+    /* @media (min-width: 1200px) {
+        .card-columns {
+            column-count: 2;
+        }
+    } */
 
 
 /* Row */
@@ -2429,6 +2458,7 @@ input, select, textarea {
 	.icon.alt {
 		border-color: rgba(255, 255, 255, 0.35);
 		color: #ffffff;
+        background-color: #9bb2e1;
 	}
 
 		.icon.alt:hover {
@@ -2494,8 +2524,10 @@ input, select, textarea {
 			}
         
         img.desktop-gif{
-            width: 800px;
+            width: 600px;
+            max-width: 100%;
             height: auto;
+            border-radius: 1em;
         }
 
         img.phone-gif{
@@ -2713,7 +2745,7 @@ input, select, textarea {
 
 /* Iconify */
 .iconify {
-    width: 3em; 
+    width: 40px; 
     height: auto;
     color: #313131;
 }
@@ -3115,24 +3147,24 @@ input, select, textarea {
     }
     
         .landing .left {
-            flex: 47%;
-            text-align: right;
+            flex: 40%;
+            text-align: middle;
             padding: 1em 5em 0 0;
         }
             .landing .left img {
                 border-radius: 100%; 
-                width: 18em;
+                width: 15em;
             }
 
         .landing .right {
-            flex: 53%;
+            flex: 60%;
             text-align: left;
             padding: 2em 0 0 0;
             
         }
 
             .landing .right h5 {
-                max-width: 20em;
+                max-width: 35em;
             }
 
             .landing .right .info{
@@ -3506,7 +3538,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 6em 4em 3em 4em ;
+					padding: 6em 4em 0.1em 4em ;
 					/* padding: 5em 3em 2em 3em ; */
 				}
 
@@ -3519,7 +3551,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 5em 3em 2em 3em ;
+					padding: 5em 3em 0.1em 3em ;
 					/* padding: 4em 2em 1em 2em ; */
 				}
 
@@ -3541,7 +3573,7 @@ input, select, textarea {
 					}
 
 				#header.alt {
-					padding: 4em 2em 1em 2em ;
+					padding: 4em 2em 0.1em 2em ;
 				}
 
 					#header.alt h1 {
@@ -3561,7 +3593,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 4em 1.5em 1em 1.5em ;
+					padding: 4em 1.5em 0.1em 1.5em ;
 				}
 
 		}
@@ -3573,7 +3605,7 @@ input, select, textarea {
 			}
 
 				#header.alt {
-					padding: 3.5em 1em 0.5em 1em ;
+					padding: 3.5em 1em 0.1em 1em ;
 				}
 
 		}

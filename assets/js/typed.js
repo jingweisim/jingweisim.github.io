@@ -1,12 +1,13 @@
 const sleep = ms => new Promise(res => setTimeout(res, ms));
 
 var typed = new Typed('#typed', {
-    strings: ["hello!", "Welcome to my projects."],
-    typeSpeed : 50,
-    backSpeed: 20,
-    backDelay: 1400,
-    onComplete: async(self)=> {
-        await sleep(1600);
-        self.cursor.remove();
-    },
+    strings: ["Software Engineering...", "Machine Learning..."],
+    typeSpeed : 100,
+    backSpeed: 70,
+    backDelay: 1200,
+    loop: true,
+    // onComplete: async(self)=> {
+    //     await sleep(1600);
+    //     self.cursor.remove();
+    // },
 });
