@@ -2527,7 +2527,7 @@ input, select, textarea {
             width: 600px;
             max-width: 100%;
             height: auto;
-            border-radius: 1em;
+            border-radius: 0.5em;
         }
 
         img.phone-gif{
