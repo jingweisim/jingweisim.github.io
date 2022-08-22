@@ -24,7 +24,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 10);
+			}, 100);
 		});
 
 	// Nav.
