@@ -24,7 +24,7 @@
 		$window.on('load', function() {
 			window.setTimeout(function() {
 				$body.removeClass('is-preload');
-			}, 100);
+			}, 50);
 		});
 
 	// Nav.
@@ -49,7 +49,7 @@
 
 				$nav_a
 					.scrolly({
-						speed: 1000,
+						speed: 500,
 						offset: function() { return $nav.height(); }
 					})
 					.on('click', function() {
@@ -117,7 +117,7 @@
 
 	// Scrolly.
 		$('.scrolly').scrolly({
-			speed: 1000
+			speed: 500
 		});
 
 })(jQuery);

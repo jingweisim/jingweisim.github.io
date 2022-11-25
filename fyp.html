@@ -49,7 +49,7 @@
                         <section id="content" class="main">
                             <div id="intro" class="container w-100 p-0">
 
-                                <h1>Final Year Project</h1>
+                                <h1>Final Year Project - StockItUp</h1>
                                 <br>
                                 <p>
                                     Our team collaborated with <b><span style="color: #e37682;">Stemly</span></b>, an AI Software-as-a-Service (SaaS) company for our <b>Final Year Project</b> to predict
@@ -65,10 +65,16 @@
                                 <div id="details" class="container px-1 pb-1 pt-3 mb-1">
                                     <h3>Description</h3>
                                     <p>
-                                        The web application features a frontend dashboard and a backend machine learning system that is built using data pipelining tool and other 
-                                        distributed services, allowing users to run machine learning tasks asynchronously. 
-                                        The backend services exchange events via Redis Pub/Sub and these events are communicated to the frontend using WebSockets to allow for real time updates to the dashboard.
-
+                                        The web application features a frontend dashboard that displays key insights about the transaction data and allows users to <b>generate demand forecasts 
+                                        and shelf replenishment timing predictions</b> using machine learning.
+                                    </p>
+                                    <p>
+                                        The backend system features an API application, data/ML pipelines and other containerized services, 
+                                        allowing users to run <b>automated machine learning model training</b> and <b>data preprocessing tasks</b> asynchronously.
+                                    </p>
+                                    <p>
+                                        The backend services communicate via events with Redis Pub/Sub and these events from the Airflow server are communicated to the frontend using WebSockets to allow for <b>real time notifications to the dashboard</b> for long running tasks.
+                                        Model training pipeline conducts <b>hyperparameter tuning</b> with Optuna and deploys the best performing model.
                                     </p>
                                 </div>
 
@@ -78,10 +84,9 @@
                                         Technology
                                     </h3>
                                     <ul class="d-inline-block align-left p-0" style="list-style-type: none;">
-                                        <li class="p-0">&#8226 Business Metrics Dashboard</li>
-                                        <li class="p-0">&#8226 Data cleaning & preprocessing pipeline</li>
-                                        <li class="p-0">&#8226 Machine Learning model retraining pipeline</li>
-                                        <li class="p-0">&#8226 Machine Learning inference</li>
+                                        <li class="p-0">&#8226 <b>Business Metrics Dashboard</b></li>
+                                        <li class="p-0">&#8226 <b>Demand Forecasting</b> with <b><span style="color: #e37682;">Temporal Fusion Transformer</span></b></li>
+                                        <li class="p-0">&#8226 <b><span style="color: #e37682;">Multi-label</span></b> <b>Shelf Replenishment</b> with Machine Learning</li>
                                     </ul>
                                 </div>
 
@@ -129,7 +134,7 @@
                                 <div class="container mb-5">
                                     <h3 id="takeaways">Takeaways</h3>
                                     <p class="justify">
-                                        It was really enriching and rewarding experience. It gave me a new perspective of applied machine learning in the FMCG industry and how software engineering and machine learning complements each other.
+                                        It was really enriching and rewarding experience. It gave me a new perspective of applied machine learning in the FMCG industry and how software engineering and machine learning complements each other to deliver value to users.
                                     </p>
                                 </div>
                     
