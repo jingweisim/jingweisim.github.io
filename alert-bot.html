@@ -10,7 +10,7 @@
         <script src="https://www.googletagmanager.com/gtag/js?id=G-2GZ9JSPRNE"></script>
         <script src="./assets/js/gtag.js"></script>
 
-		<title>DoggoBot</title>
+		<title>Alert Bot</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -25,12 +25,12 @@
                 <div style="overflow: hidden;">
                     <div class="header-text">
                         <div class="foreground">
-                            <h1 class="text-dark">Projects</h1>
-                            <p>Jan 2021</p>
+                            <h1 class="text-light">Projects</h1>
+                            <p class="text-light">Jun 2022</p>
                         </div>
                         <a href="/#projects" class="btn btn-secondary px-4 mb-3 text-white">Back</a>
                     </div>
-					<header id="header" class="doggo-bg"></z>
+					<header id="header" class="telegram-bg"></z>
                 </div>
                     <!-- Nav -->
                     <nav id="nav">
@@ -49,26 +49,25 @@
                         <section id="content" class="main p-3">
                             <div class="container w-100 p-0">
 
-                                <h1 class="pt-4">DoggoBot (TelegramBot Dog Breed Identifier)</h1>
+                                <h1 class="pt-4">Alert Bot</h1>
                                 <br>
                                 <p>
-                                    <b><span style="color: #e37682;">Hack&Roll 2021 </span></b> was a 24 hours Hackathon that spanned from 8 to 9 Jan 2021.
+                                    <b><span style="color: #e37682;">Alert Bot </span></b> sends out scheduled job notifications to users via a Telegram Bot.
                                     <br><br>
-                                    As a fun side project to explore and learn more about Machine Learning and Software Development, our team decided to develop a Dog Breed 
-                                    Classification model &#128021 and host it on a Telegram Bot.
+                                    The <b>Alert Bot</b> is a fun side project to explore Serverless Functions, Cloud Computing Platforms and Event-Driven systems.
                                 </p>
                                 <div class="row m-4 mb-3">
                                     <div id="bot" class="col-lg-12 align-center">
-                                        <img src="images/doggo_bot.gif" class="phone-gif" alt="" />
+                                        <img src="images/alert_bot.png" class="phone-gif" alt="" />
                                     </div>
                                 </div>
 
                                 <div id="details" class="container px-1 pb-1 pt-3 mb-1">
                                     <h3>Description</h3>
                                     <p>
-                                        The Bot allows users to submit an image of a dog and the Telegram bot will
-                                        run an inference on the image using a trained MobileNetV2 Convolutional Neural Network 
-                                        model to predict the breed of the dog.
+                                        The Bot uses AWS Lambda to send out daily job updates using TelegramBot API. 
+                                        AWS EventBridge is used to scheduled event triggers to execute daily Lambda functions for web scraping and messaging tasks. An Object Oriented approach was taken: a base web scraper 
+                                        was created and each child class overrides the extraction method to accommodate web pages with different DOM structures.
                                 </div>
 
 
@@ -78,10 +77,8 @@
                                     </h3>
                                     <ul class="d-inline-block align-left p-0" style="list-style-type: none;">
                                         <li class="p-0">&#8226 Telegram Bot API</li>
-                                        <li class="p-0">&#8226 Transfer Learning using TensorFlow Hub's MobileNetV2 CNN model</li>
-                                        <li class="p-0">&#8226 Trained on Stanford Dogs Dataset (20,000 images)</li>
-                                        <li class="p-0">&#8226 84% Test Accuracy</li>
-                                        <li class="p-0">&#8226 Deployed to Heroku</li>
+                                        <li class="p-0">&#8226 Serverless and event driven using AWS Lambda and AWS EventBridge</li>
+                                        <li class="p-0">&#8226 Built with Docker and Node.js</li>
                                     </ul>
                                 </div>
 
@@ -91,13 +88,15 @@
                                             <img src="./images/telegram_bot_API.png" width="210" alt="" class="p-3">
                                         </div>
                                         <div class="col-lg-3 col-md-6 align-center">
-                                            <img src="./images/tensorflow.png" width="150" alt="" class="p-3">
+                                            <img src="./images/aws_lambda.png" width="110" alt="" class="px-3 pt-2 pb-1">
+                                            <p><b>AWS Lambda</b></p>
                                         </div>
                                         <div class="col-lg-3 col-md-6 align-center">
-                                            <img src="./images/tf_hub.png" width="220" alt="" class="p-3">
+                                            <img src="./images/aws_eventbridge.png" width="120" alt="" class="px-3 pt-2 pb-0">
+                                            <p><b>AWS EventBridge</b></p>
                                         </div>
                                         <div class="col-lg-3 col-md-6 align-center">
-                                            <img src="./images/heroku.png" width="130" alt="" class="p-2">
+                                            <img src="./images/node.png" width="140" alt="" class="p-3 pt-4">
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +105,7 @@
                                 <div class="container mb-5">
                                     <h3 id="takeaways">Takeaways</h3>
                                     <p class="justify">
-                                        It was a really fun and rewarding learning experience. It was an enriching hackathon that opened my perception to the possibilities and capabilities of Deep Learning and Computer Vision.    
+                                        It was a really fun and rewarding learning experience. It was an enriching project that widen my knowledge of Serverless backends.    
                                     </p>
                                 </div>
                     

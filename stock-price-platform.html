@@ -10,7 +10,7 @@
         <script src="https://www.googletagmanager.com/gtag/js?id=G-2GZ9JSPRNE"></script>
         <script src="./assets/js/gtag.js"></script>
 
-		<title>DoggoBot</title>
+		<title>Stock Price Platform</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -26,17 +26,17 @@
                     <div class="header-text">
                         <div class="foreground">
                             <h1 class="text-dark">Projects</h1>
-                            <p>Jan 2021</p>
+                            <p>Jan 2022</p>
                         </div>
                         <a href="/#projects" class="btn btn-secondary px-4 mb-3 text-white">Back</a>
                     </div>
-					<header id="header" class="doggo-bg"></z>
+					<header id="header" class="stock-bg"></z>
                 </div>
                     <!-- Nav -->
                     <nav id="nav">
                         <ul>
                             <li><a href="#content" class="active">Introduction</a></li>
-                            <li><a href="#bot">Bot Demo</a></li>
+                            <li><a href="#bot">Demo</a></li>
                             <li><a href="#details">Project Details</a></li>
                             <li><a href="#takeaways">Takeaways</a></li>
                         </ul>
@@ -46,29 +46,30 @@
 					<div id="main">
 
                     <!-- Content -->
-                        <section id="content" class="main p-3">
-                            <div class="container w-100 p-0">
+                        <section id="content" class="main">
+                            <div id="intro" class="container w-100 p-0">
 
-                                <h1 class="pt-4">DoggoBot (TelegramBot Dog Breed Identifier)</h1>
+                                <h1>Stock Price Platform</h1>
                                 <br>
                                 <p>
-                                    <b><span style="color: #e37682;">Hack&Roll 2021 </span></b> was a 24 hours Hackathon that spanned from 8 to 9 Jan 2021.
-                                    <br><br>
-                                    As a fun side project to explore and learn more about Machine Learning and Software Development, our team decided to develop a Dog Breed 
-                                    Classification model &#128021 and host it on a Telegram Bot.
+                                    Our team collaborated with an <b><span style="color: #e37682;">AI Software-as-a-Service (SaaS)</span></b> company for our <b>Final Year Project</b> to predict
+                                    the demand of retail products in the Fast Moving Consumer Goods (FMCG) industry.
                                 </p>
                                 <div class="row m-4 mb-3">
                                     <div id="bot" class="col-lg-12 align-center">
-                                        <img src="images/doggo_bot.gif" class="phone-gif" alt="" />
+                                        <img src="images/fa.gif" class="desktop-gif" style="width: 750px; border: 0.5px solid rgb(234, 230, 230)" alt="" />
                                     </div>
                                 </div>
 
                                 <div id="details" class="container px-1 pb-1 pt-3 mb-1">
                                     <h3>Description</h3>
                                     <p>
-                                        The Bot allows users to submit an image of a dog and the Telegram bot will
-                                        run an inference on the image using a trained MobileNetV2 Convolutional Neural Network 
-                                        model to predict the breed of the dog.
+                                        The web application features a <b><span style="color: #e37682;">Vue.js and Chart.js</span></b> frontend UI that  displays the technical indicators charts using <b>Yahoo Finance API</b> for real time data retrieval and Python Pandas for generation of the indicator.
+                                    </p>
+                                    <p>
+                                        The <b><span style="color: #e37682;">Flask</span></b> backend system features a <b>microservices architecture</b> to support the processing of technical indicators generation (MACD, RSI, etc), efficient frontier computation for portfolio optimization and portfolio price forecasting with XGBoost Regressor.
+                                        Price is used as the main feature in the forecasting and multi-step forecasting is achieved using autoregressive feedback loops.
+                                    </p>
                                 </div>
 
 
@@ -77,27 +78,37 @@
                                         Technology
                                     </h3>
                                     <ul class="d-inline-block align-left p-0" style="list-style-type: none;">
-                                        <li class="p-0">&#8226 Telegram Bot API</li>
-                                        <li class="p-0">&#8226 Transfer Learning using TensorFlow Hub's MobileNetV2 CNN model</li>
-                                        <li class="p-0">&#8226 Trained on Stanford Dogs Dataset (20,000 images)</li>
-                                        <li class="p-0">&#8226 84% Test Accuracy</li>
-                                        <li class="p-0">&#8226 Deployed to Heroku</li>
+                                        <li class="p-0">&#8226 <b>Technical Indicators Analysis Charts</b></li>
+                                        <li class="p-0">&#8226 <b>Portfolio Optimization</b> with <b><span style="color: #e37682;">Efficient Frontier</span></b> computation</li>
+                                        <li class="p-0">&#8226 <b>ETF price prediction</b> with Machine Learning</li> 
                                     </ul>
                                 </div>
 
                                 <div class="container p-1 mb-3">
+                                    <br>
+                                    <span class="d-inline-block pr-2"><h6>Frontend:</h6></span>
                                     <div class="row">
-                                        <div class="col-lg-3 col-md-6 align-center">
-                                            <img src="./images/telegram_bot_API.png" width="210" alt="" class="p-3">
+                                        <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                            <img src="./images/vue.png" width="80" alt="" class="p-3">
                                         </div>
-                                        <div class="col-lg-3 col-md-6 align-center">
-                                            <img src="./images/tensorflow.png" width="150" alt="" class="p-3">
+                                        <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                            <img src="./images/bootstrap.png" width="90" alt="" class="p-3">
                                         </div>
-                                        <div class="col-lg-3 col-md-6 align-center">
-                                            <img src="./images/tf_hub.png" width="220" alt="" class="p-3">
+                                    </div>
+                                    <span class="d-inline-block pr-2"><h6>Backend:</h6></span>
+                                    <div class="row m-3">
+                                        <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                            <img src="./images/flask.png" width="170" alt="" class="p-3">
                                         </div>
-                                        <div class="col-lg-3 col-md-6 align-center">
-                                            <img src="./images/heroku.png" width="130" alt="" class="p-2">
+                                        <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                            <img src="./images/yahoo_api.png" width="160" alt="" class="p-3 pt-4">
+                                        </div>
+                                        <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                            <img src="./images/docker.png" width="110" alt="" class="p-3">
+                                        </div>
+                                        
+                                        <div class="col-lg-3 col-md-4 col-sm-6 align-center">
+                                            <img src="./images/docker_compose.png" width="200" alt="" class="p-3">
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +117,7 @@
                                 <div class="container mb-5">
                                     <h3 id="takeaways">Takeaways</h3>
                                     <p class="justify">
-                                        It was a really fun and rewarding learning experience. It was an enriching hackathon that opened my perception to the possibilities and capabilities of Deep Learning and Computer Vision.    
+                                        It was really enriching and rewarding experience. I learnt how financial data can be used to provide value to others and how machine learning prediction can be incorporated into a web application.
                                     </p>
                                 </div>
                     
