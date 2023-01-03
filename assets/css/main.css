@@ -3487,8 +3487,8 @@ input, select, textarea {
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            filter: blur(1px);
-            -webkit-filter: blur(1px);
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
             height: 18em;
         }
 
@@ -3504,11 +3504,11 @@ input, select, textarea {
 
         .stock-bg {
             background-image: url(../../images/stock.jpg);
-            background-position: center;
-            /* background-repeat: no-repeat; */
-            /* background-size: cover; */
-            filter: blur(1px);
-            -webkit-filter: blur(1px);
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
             height: 18em;
         }
 
