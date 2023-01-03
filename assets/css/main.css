@@ -344,6 +344,10 @@ input, select, textarea {
         height: auto;
     }
 
+    .project-card {
+        max-height: 800px;
+    }
+
     .work-experience-card {
         max-height: 300px;
     }
@@ -2531,9 +2535,11 @@ input, select, textarea {
         }
 
         img.phone-gif{
-            width: 310px;
-            max-width: 100%;
-            height: auto;
+            /* width: 310px; */
+            width: auto;
+            /* max-width: auto; */
+            height: 100%;
+            max-height: 550px;
             border-radius: 1em;
         }
 
@@ -4196,15 +4202,23 @@ input, select, textarea {
 		/* width: 78em; */
 		/* max-width: calc(100%); */
 		max-width: 1450px;
-		/* max-width: calc(100% - 2em); */
+		width: calc(100% - 5em);
 		margin: 0 auto;
 	}
+
+        @media screen and (max-width: 736px) {
+
+            #wrapper {
+                width: calc(100% - 3em);
+            }
+
+        }
 
 		@media screen and (max-width: 480px) {
         
 			#wrapper {
 				/* max-width: calc(100% - 2em); */
-				max-width: calc(100%);
+				width: calc(100%);
 			}
 
 		}
@@ -4212,7 +4226,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			#wrapper {
-				max-width: 100%;
+				width: 100%;
                 /* max-width: calc(100% - 1em); */
 			}
 
