@@ -52,7 +52,7 @@
                                 <h1 class="pt-4">Alert Bot</h1>
                                 <br>
                                 <p>
-                                    The <b><span style="color: #e37682;">Alert Bot</span></b> is a fun side project to explore Serverless Functions, Cloud Computing Platforms and Event-Driven systems, the Telegram Bot sends out scheduled job notifications to users via push notifications.
+                                    The <b><span style="color: #e37682;">Alert Bot</span></b> is a fun side project to explore Serverless Functions, Cloud Computing Platforms and Event-Driven systems. The Telegram Bot sends out scheduled job notifications to users via push notifications.
                                 </p>
                                 <div class="row m-4 mb-3">
                                     <div id="bot" class="col-lg-12 align-center">
@@ -64,9 +64,13 @@
                                     <h3>Description</h3>
                                     <p>
                                         The Bot uses AWS Lambda to send out daily job updates using TelegramBot API. 
-                                        AWS EventBridge is used to scheduled event triggers to execute daily Lambda functions for web scraping and messaging tasks. An Object Oriented approach was taken: a base web scraper 
-                                        was created and each child class overrides the extraction method to accommodate web pages with different DOM structures.
-                                </div>
+                                        AWS EventBridge is used to schedule event triggers to execute daily Lambda functions for web scraping and messaging tasks.
+                                    </p>
+                                    <p>
+                                        An Object Oriented approach was taken: a base web scraper class
+                                        was created and each child class overrides the parent extraction method to accommodate web pages with different DOM structures.
+                                    </p>
+                                    </div>
 
 
                                 <div class="container p-1 mb-1">
@@ -75,8 +79,8 @@
                                     </h3>
                                     <ul class="d-inline-block align-left p-0" style="list-style-type: none;">
                                         <li class="p-0">&#8226 Telegram Bot API</li>
-                                        <li class="p-0">&#8226 Serverless and event driven using AWS Lambda and AWS EventBridge</li>
-                                        <li class="p-0">&#8226 Built with Docker and Node.js</li>
+                                        <li class="p-0">&#8226 AWS Lambda and AWS EventBridge</li>
+                                        <li class="p-0">&#8226 Node.js and Docker</li>
                                     </ul>
                                 </div>
 
