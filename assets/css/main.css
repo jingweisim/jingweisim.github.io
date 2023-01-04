@@ -3517,8 +3517,8 @@ input, select, textarea {
             /* background-position: center; */
             background-repeat: no-repeat;
             background-size: cover;
-            filter: blur(5px);
-            -webkit-filter: blur(5px);
+            filter: blur(0px);
+            -webkit-filter: blur(0px);
             height: 18em;
         }
 
